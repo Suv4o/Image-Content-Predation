@@ -18,6 +18,7 @@ document.getElementById("file")!.addEventListener("change", (event) => {
     fileNameTrim.pop();
     fileName = fileNameTrim.join(".");
     reader.readAsDataURL(attachedFile);
+    document.getElementById("caption")!.innerHTML = "";
 });
 
 document.getElementById("generate")!.addEventListener("click", () => {
